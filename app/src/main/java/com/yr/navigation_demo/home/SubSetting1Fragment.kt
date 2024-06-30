@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
-import com.yr.navigation_demo.databinding.FragmentHomePageBinding
+import com.yr.navigation_demo.databinding.FragmentSubSetting1Binding
 
-class HomePageFragment : Fragment() {
-    private var _binding: FragmentHomePageBinding? = null
+class SubSetting1Fragment : Fragment() {
+    private var _binding: FragmentSubSetting1Binding? = null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +20,7 @@ class HomePageFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentHomePageBinding.inflate(inflater, container, false)
+        _binding = FragmentSubSetting1Binding.inflate(inflater, container, false)
         val view = binding.root
         val navController = NavHostFragment.findNavController(this)
 

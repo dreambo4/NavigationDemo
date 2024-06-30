@@ -19,7 +19,7 @@ class BillFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentBillBinding.inflate(inflater, container, false)
         val view = binding.root
         val navController = NavHostFragment.findNavController(this)
