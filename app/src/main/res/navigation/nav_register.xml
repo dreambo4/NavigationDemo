@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_register"
+    app:startDestination="@id/registerEmailFragment">
+    <fragment
+        android:id="@+id/registerEmailFragment"
+        android:name="com.yr.mynavigation.register.RegisterEmailFragment"
+        android:label="fragment_register_email"
+        tools:layout="@layout/fragment_register_email">
+        <action
+            android:id="@+id/action_registerEmailFragment_to_registerPasswordFragment"
+            app:destination="@id/registerPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerPasswordFragment"
+        android:name="com.yr.mynavigation.register.RegisterPasswordFragment"
+        android:label="fragment_register_password"
+        tools:layout="@layout/fragment_register_password">
+        <action
+            android:id="@+id/action_registerPasswordFragment_to_termFragment"
+            app:destination="@id/termFragment" />
+        <action
+            android:id="@+id/action_registerPasswordFragment_to_registerPersonalInfoFragment"
+            app:destination="@id/registerPersonalInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/termFragment"
+        android:name="com.yr.mynavigation.register.TermFragment"
+        android:label="fragment_term"
+        tools:layout="@layout/fragment_term">
+        <action
+            android:id="@+id/action_termFragment_to_registerPasswordFragment"
+            app:destination="@id/registerPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerPersonalInfoFragment"
+        android:name="com.yr.mynavigation.register.RegisterPersonalInfoFragment"
+        android:label="fragment_register_personal_info"
+        tools:layout="@layout/fragment_register_personal_info">
+        <action
+            android:id="@+id/action_registerPersonalInfoFragment_to_mainActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.yr.mynavigation.login.LoginActivity"
+        android:label="login_main"
+        tools:layout="@layout/activity_login" />
+</navigation>

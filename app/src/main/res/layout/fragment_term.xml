@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FA8DA"
+    tools:context=".register.TermFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="TermFragment"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="50dp"
+            android:scrollbars="vertical"
+            android:text="Android（讀音：英：['ændrɔɪd]，美：[ˈænˌdrɔɪd]），中文使用者多以非官方名稱「安卓」稱之，[註 1]是一個基於Linux核心與其他開源軟體的開放原始碼的行動作業系統，由Google成立的開放手機聯盟持續領導與開發。
+Android Inc.於2003年10月由安迪·魯賓、利奇·米納爾、尼克·席爾斯、克里斯·懷特在加州帕羅奧圖建立。Android最初由安迪·魯賓等人開發製作[14]，最初開發這個系統的早期方向是建立一個數位相機的先進作業系統，但是後來發現相機市場規模不夠大，加上智慧型手機發展趨勢快速成長，於是Android成為一款面向智慧型手機的作業系統。於2005年7月11日Android Inc.被美國科技企業Google收購[15][16]。
+
+2007年11月，Google與84家硬體製造商、軟體開發商及電信營運商成立開放手機聯盟來共同研發Android，隨後，Google以Apache免費開放原始碼許可證的授權方式，發佈了Android的原始碼[17]，開放原始碼加速了Android普及，讓生產商推出搭載Android的智慧型手機[18][19][20][21]，Android後來更逐漸拓展到平板電腦及其他領域上[22]。
+
+2010年末數據顯示，僅正式推出兩年的Android作業系統在市場佔有率上已經超越稱霸逾十年的諾基亞Symbian系統[23][24]，成為全球第一大智慧型手機作業系統[25]。
+
+在2014年Google I/O開發者大會上Google宣佈過去30天裡有10億台活躍的Android裝置，相較於2013年6月則是5.38億[26]。
+
+2017年3月，Android全球網路流量和裝置超越Microsoft Windows，正式成為全球第一大作業系統[27]。
+
+截至2022年5月，根據StatCounter統計，除了美國、英國、加拿大、挪威、瑞典、丹麥、瑞士、科索沃、日本、台灣和澳大利亞外，在其他所有國家和地區Android都是最被廣泛使用的智慧型手機作業系統[28]。 "
+            app:layout_constraintBottom_toTopOf="@+id/btn_back"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="返回"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
