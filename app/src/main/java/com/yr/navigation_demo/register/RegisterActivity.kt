@@ -1,8 +1,8 @@
-package com.yr.mynavigation.register
+package com.yr.navigation_demo.register
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.yr.mynavigation.R
+import com.yr.navigation_demo.R
 
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -6,7 +6,7 @@
     app:startDestination="@id/registerEmailFragment">
     <fragment
         android:id="@+id/registerEmailFragment"
-        android:name="com.yr.mynavigation.register.RegisterEmailFragment"
+        android:name="com.yr.navigation_demo.register.RegisterEmailFragment"
         android:label="fragment_register_email"
         tools:layout="@layout/fragment_register_email">
         <action
@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerPasswordFragment"
-        android:name="com.yr.mynavigation.register.RegisterPasswordFragment"
+        android:name="com.yr.navigation_demo.register.RegisterPasswordFragment"
         android:label="fragment_register_password"
         tools:layout="@layout/fragment_register_password">
         <action
@@ -27,7 +27,7 @@
     </fragment>
     <fragment
         android:id="@+id/termFragment"
-        android:name="com.yr.mynavigation.register.TermFragment"
+        android:name="com.yr.navigation_demo.register.TermFragment"
         android:label="fragment_term"
         tools:layout="@layout/fragment_term">
         <action
@@ -36,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerPersonalInfoFragment"
-        android:name="com.yr.mynavigation.register.RegisterPersonalInfoFragment"
+        android:name="com.yr.navigation_demo.register.RegisterPersonalInfoFragment"
         android:label="fragment_register_personal_info"
         tools:layout="@layout/fragment_register_personal_info">
         <action
@@ -45,7 +45,7 @@
     </fragment>
     <activity
         android:id="@+id/loginActivity"
-        android:name="com.yr.mynavigation.login.LoginActivity"
+        android:name="com.yr.navigation_demo.login.LoginActivity"
         android:label="login_main"
         tools:layout="@layout/activity_login" />
 </navigation>

@@ -1,9 +1,8 @@
-package com.yr.mynavigation.login
+package com.yr.navigation_demo.login
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.yr.mynavigation.databinding.ActivityLoginBinding
+import com.yr.navigation_demo.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding

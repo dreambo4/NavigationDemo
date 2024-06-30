@@ -1,4 +1,4 @@
-package com.yr.mynavigation
+package com.yr.navigation_demo
 
 import org.junit.Test
 import org.junit.Assert.*

@@ -1,4 +1,4 @@
-package com.yr.mynavigation
+package com.yr.navigation_demo
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -17,6 +17,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.yr.mynavigation", appContext.packageName)
+        assertEquals("com.yr.navigation_demo", appContext.packageName)
     }
 }

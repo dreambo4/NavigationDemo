@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/homePageFragment"
-        android:name="com.yr.mynavigation.home.HomePageFragment"
+        android:name="com.yr.navigation_demo.home.HomePageFragment"
         android:label="fragment_home_page"
         tools:layout="@layout/fragment_home_page" />
     <fragment
         android:id="@+id/settingFragment"
-        android:name="com.yr.mynavigation.home.SettingFragment"
+        android:name="com.yr.navigation_demo.home.SettingFragment"
         android:label="fragment_setting"
         tools:layout="@layout/fragment_setting" />
     <fragment
         android:id="@+id/billFragment"
-        android:name="com.yr.mynavigation.home.BillFragment"
+        android:name="com.yr.navigation_demo.home.BillFragment"
         android:label="fragment_bill"
         tools:layout="@layout/fragment_bill" />
 </navigation>

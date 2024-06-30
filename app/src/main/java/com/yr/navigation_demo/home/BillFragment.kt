@@ -1,18 +1,17 @@
-package com.yr.mynavigation.login
+package com.yr.navigation_demo.home
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
-import com.yr.mynavigation.R
-import com.yr.mynavigation.databinding.FragmentLoginBinding
+import com.yr.navigation_demo.databinding.FragmentBillBinding
 
-class LoginFragment : Fragment() {
-    private var _binding: FragmentLoginBinding? = null
+class BillFragment : Fragment() {
+    private var _binding: FragmentBillBinding? = null
     private val binding get() = _binding!!
-
+    
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
     }
@@ -20,18 +19,10 @@ class LoginFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        _binding = FragmentLoginBinding.inflate(inflater, container, false)
+    ): View? {
+        _binding = FragmentBillBinding.inflate(inflater, container, false)
         val view = binding.root
         val navController = NavHostFragment.findNavController(this)
-
-        binding.btnLogin.setOnClickListener {
-            navController.navigate(R.id.homeActivity)
-        }
-
-        binding.btnRegister.setOnClickListener {
-            navController.navigate(R.id.registerActivity)
-        }
 
         return view
     }

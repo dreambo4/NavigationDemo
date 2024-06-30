@@ -1,11 +1,11 @@
-package com.yr.mynavigation.home
+package com.yr.navigation_demo.home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.Navigation
 import androidx.navigation.ui.NavigationUI
-import com.yr.mynavigation.R
-import com.yr.mynavigation.databinding.ActivityHomeBinding
+import com.yr.navigation_demo.R
+import com.yr.navigation_demo.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding

@@ -1,4 +1,4 @@
-package com.yr.mynavigation.register
+package com.yr.navigation_demo.register
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
-import com.yr.mynavigation.R
-import com.yr.mynavigation.databinding.FragmentRegisterEmailBinding
+import com.yr.navigation_demo.R
+import com.yr.navigation_demo.databinding.FragmentRegisterEmailBinding
 
 class RegisterEmailFragment : Fragment() {
     private var _binding: FragmentRegisterEmailBinding? = null

@@ -1,36 +1,40 @@
-package com.yr.mynavigation.register
+package com.yr.navigation_demo.register
 
 import android.os.Bundle
-import android.text.method.ScrollingMovementMethod
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.NavHostFragment
-import com.yr.mynavigation.R
-import com.yr.mynavigation.databinding.FragmentTermBinding
+import com.yr.navigation_demo.R
+import com.yr.navigation_demo.databinding.FragmentRegisterPersonalInfoBinding
 
-class TermFragment : Fragment() {
-    private var _binding: FragmentTermBinding? = null
+class RegisterPersonalInfoFragment : Fragment() {
+    private var _binding: FragmentRegisterPersonalInfoBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentTermBinding.inflate(inflater, container, false)
+        _binding = FragmentRegisterPersonalInfoBinding.inflate(inflater, container, false)
         val view = binding.root
         val navController = NavHostFragment.findNavController(this)
 
-        binding.content.movementMethod = ScrollingMovementMethod()
-        binding.btnBack.setOnClickListener {
-            navController.navigate(R.id.registerPasswordFragment)
+        binding.btnSubmit.setOnClickListener {
+            Toast.makeText(context, "註冊成功", Toast.LENGTH_SHORT).show()
+            navController.navigate(R.id.loginActivity)
+            activity?.finish()
         }
 
         return view
     }
+
+
 }
